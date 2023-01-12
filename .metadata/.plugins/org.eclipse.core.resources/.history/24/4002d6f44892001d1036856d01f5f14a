@@ -1,0 +1,24 @@
+package selenium_practice;
+
+import org.openqa.selenium.By;
+// . <- ~안에
+// * <- 전부 다!
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SeleniumTest2 {
+	public static void main (String[] args) {
+		// 크롬 드라이버 생성 후에 변수에 담고
+		WebDriver driver = new ChromeDriver();
+		
+		// 내가 원하는 사이트 열어줘~
+		driver.get("https://www.naver.com");
+		
+		// 증권 버튼 선택자를 가져와 줘!
+		WebElement financeBtn = driver.findElement(By.cssSelector("#NM_FAVORITE > div.group_nav > ul.list_nav.NM_FAVORITE_LIST > li:nth-child(3) > a"));
+		
+		// 증권 버튼 클릭!
+		financeBtn.click();
+	}
+}

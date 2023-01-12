@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;selenium_practice.TeleniumTest&apos; to &apos;SeleniumTest&apos;&#x0D;&#x0A;- Original project: &apos;selenium_practice&apos;&#x0D;&#x0A;- Original element: &apos;selenium_practice.TeleniumTest&apos;&#x0D;&#x0A;- Renamed element: &apos;selenium_practice.SeleniumTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TeleniumTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;selenium_practice{TeleniumTest.java[TeleniumTest" matchStrategy="1" name="SeleniumTest" qualified="false" references="true" similarDeclarations="false" stamp="1673511307669" textual="false" version="1.0"/>
+</session>
