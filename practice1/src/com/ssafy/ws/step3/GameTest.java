@@ -14,18 +14,19 @@ public class GameTest {
 		// 내 승리, 컴퓨터 승리
 		int wins_me = 0;
 		int wins_com = 0;
-		// 가위, 바위, 보 (1, 2, 3) => rock scissors paper인데 rsp아니고 rcp..(실수)
+		// 가위, 바위, 보 (1, 2, 3) => rock scissors paper라서 rcp로 지었는데 생각해보니 rsp임..
 		int rcp_num = 0;
 		// (7 - 2*mode) 판 수행 -> 5, 3, 1
 		for(int i=1; i<=7-2*mode; i++) {
 		
 			System.out.print("가위바위보 중 하나 입력: ");
-			// nextInt 바로 다음 nextLine 쓰니까 nextLine이 앞에껄 먹어버려서 첫판에만 예외
+			// nextInt 바로 다음 nextLine 쓰니까 nextLine이 앞에껄 먹어버려서 첫판에만 예외..
 			if (i == 1) {
 				sc.nextLine();
 			}
 			
 			String rcp = sc.nextLine(); // 가위바위보!
+			
 //		// switch case도 써보려 했는데..
 //			switch(rcp) {
 //				case "가위":
@@ -68,7 +69,7 @@ public class GameTest {
 			}
 			}
 			
-		//최종 게임 결과 출력
+		//최종 게임 결과 출력 <- 승점 비교
 			if (wins_me > wins_com) {
 				System.out.println("###플레이어 승!!!");
 			}
