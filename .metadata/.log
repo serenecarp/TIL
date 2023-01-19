@@ -9712,3 +9712,6 @@ Java Model Exception: Java Model Status [C:\Program Files\Zulu\zulu-8\jre\lib\rt
 
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2023-01-19 15:46:22.358
 !MESSAGE No repository found at http://www.objectaid.net/update.
+
+!ENTRY org.eclipse.jface.text 2 0 2023-01-19 16:25:52.684
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'

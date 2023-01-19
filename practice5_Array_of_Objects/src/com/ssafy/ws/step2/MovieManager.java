@@ -16,13 +16,13 @@ public class MovieManager {
 	private static MovieManager instance = new MovieManager();
 
 	private MovieManager() {
-
+		
 	}
 
 	public static MovieManager getInstance() {
-//		if(instance == null) // ?????????
+//		if(instance == null) // 최초에 한 번만 new로 메모리에 할당한다... 라고 한다....
 //		{
-//			instance = new MovieManager(); //??????????
+//			instance = new MovieManager(); // 솔직히 잘 와닿지 않는다. 위에서 이미 한건가?
 //		}
 		return instance;
 	}

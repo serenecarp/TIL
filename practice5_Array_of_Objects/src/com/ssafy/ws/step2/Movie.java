@@ -8,7 +8,7 @@ public class Movie {
 	private int runningTime;
 	// 마우스 우클릭 -> Source-> Generate constructor 뭐시기
 	public Movie() {
-		
+		this(0, "none", "none", "none", 0);
 	}
 	
 	
