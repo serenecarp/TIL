@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MovieManager {
 
 	private final int MAX_SIZE = 100; // final: 더이상 고칠 수 없는 상수
-
+	private int size;
 	private Movie[] movieList = new Movie[MAX_SIZE];
 
 	// 싱글턴
@@ -43,25 +43,25 @@ public class MovieManager {
 
 	public void add() {
 
-		for (int i = 0; i < movieList.length; i++) {
+		for (size = 0; size < movieList.length; size++) {
 			System.out.print("영화의 id를 입력하세요: ");
-			movieList[i].setId(sc.nextInt());
+			movieList[size].setId(sc.nextInt());
 
 			System.out.print("영화의 제목을 입력하세요: ");
 			sc.nextLine();
-			movieList[i].setTitle(sc.nextLine());
+			movieList[size].setTitle(sc.nextLine());
 
 			System.out.print("영화의 감독을 입력하세요: ");
-			movieList[i].setDirector(sc.nextLine());
+			movieList[size].setDirector(sc.nextLine());
 
 			System.out.print("영화의 장르를 입력하세요: ");
-			movieList[i].setGenre(sc.nextLine());
+			movieList[size].setGenre(sc.nextLine());
 
 			System.out.print("영화의 상영시간을 입력하세요(단위-분): ");
-			movieList[i].setRunningTime(sc.nextInt());
+			movieList[size].setRunningTime(sc.nextInt());
 
 			// 영화 목록 가득찬 경우 + 계속 입력할 것인지 말 것인지
-			if (i == 100) {
+			if (size == 100) {
 				System.out.println("영화 목록이 가득 찼습니다.");
 				break;
 			}
@@ -90,9 +90,9 @@ public class MovieManager {
 //			}
 //		}
 
-		for (int i = 0; i < movieList.length; i++) {
-			if (inputTitle.equals(movieList[i].getTitle())) {
-				return movieList[i];
+		for (size = 0; size < movieList.length; size++) {
+			if (inputTitle.equals(movieList[size].getTitle())) {
+				return movieList[size];
 			}
 		}
 		System.out.println("결과가 없습니다.");
