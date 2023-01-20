@@ -22,7 +22,7 @@ public class Movie {
 		this.runningTime = runningTime;
 	}
 
-
+	
 
 	public int getId() {
 		return id;

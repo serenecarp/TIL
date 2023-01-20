@@ -22,9 +22,7 @@ public class UserTest {
 		um.add(user2);
 		
 		// toString 을 통해 등록된 사용자 리스트 출력
-
 		System.out.println(Arrays.toString(um.getList()));
-
 		
 		// "김싸피" 라는 이름을 가진 사용자가 있으면 찾아서 출력
 		System.out.println(um.searchByName("김싸피"));
@@ -33,4 +31,5 @@ public class UserTest {
 		System.out.println(um.getList().length);
 		
 	}
+	
 }
