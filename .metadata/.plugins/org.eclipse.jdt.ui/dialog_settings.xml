@@ -2,8 +2,8 @@
 <section name="Workbench">
 	<item value="false" key="delegateUpdating"/>
 	<list key="workingset_selection_history">
-		<item value="practices"/>
 		<item value="lectures"/>
+		<item value="practices"/>
 	</list>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="false" key="renameSubpackages"/>
