@@ -2,8 +2,8 @@
 <section name="Workbench">
 	<item value="false" key="delegateUpdating"/>
 	<list key="workingset_selection_history">
-		<item value="lectures"/>
 		<item value="practices"/>
+		<item value="lectures"/>
 	</list>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="false" key="renameSubpackages"/>
@@ -28,7 +28,7 @@
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
 		<item value="678" key="DIALOG_HEIGHT"/>
 		<item value="259" key="DIALOG_X_ORIGIN"/>
-		<item value="-68" key="DIALOG_Y_ORIGIN"/>
+		<item value="-55" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>

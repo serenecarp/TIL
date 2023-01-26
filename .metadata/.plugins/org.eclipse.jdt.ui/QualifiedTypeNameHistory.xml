@@ -5,5 +5,7 @@
 <fullyQualifiedTypeName name="pkg1.Person"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="test06_genericbox.GenericBox"/>
+<fullyQualifiedTypeName name="test09_wildcard.GenericBox"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
