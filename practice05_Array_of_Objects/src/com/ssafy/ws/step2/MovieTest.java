@@ -8,8 +8,9 @@ public class MovieTest {
 
 		Scanner sc = new Scanner(System.in);
 		MovieManager mm = MovieManager.getInstance();
-
+		
 		Movie movie = new Movie();
+//		SeriesMovie serMovie = new SeriesMovie();
 
 		System.out.println(mm.getList());
 		boolean flag = true;

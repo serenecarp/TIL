@@ -1,10 +1,10 @@
 package com.ssafy.ws.step2;
 
 public interface IMovieManager {
-	void add();
+	void add(Movie movie);
 	Movie[] getList();
-	Movie[] searchByTitle();
+	Movie[] searchByTitle(String title);
 	Movie[] getMovies();
-	SeriesMovie[] getSereisMovies();
+	SeriesMovie[] getSeriesMovies();
 	double getRunningTimeAvg();
 }
