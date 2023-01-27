@@ -16,8 +16,8 @@ public class UserTest {
 		VipUser vuser = new VipUser("vip1", "vip1", "김싸피" , "ssafy3@ssafy.com", 29, "Gold", 300);
 		
 		// 싱글톤 테스트를 위해 UserManager 2개 생성
-		____________ um = UserManagerImpl.getInstance();
-		_____________ um2 = UserManagerImpl.getInstance();
+		UserManagerImpl um = UserManagerImpl.getInstance();
+		UserManagerImpl um2 = UserManagerImpl.getInstance();
 		
 		um.add(user1);
 		um.add(user2);
@@ -29,7 +29,7 @@ public class UserTest {
 		System.out.println(um.getAgeAvg());
 		
 		// UserManager 2개가 같은 인스턴스를 참조하는지 검사
-		System.out.println(_________);
+		System.out.println(um instanceof UserManagerImpl && um instanceof UserManagerImpl);
 		
 	}
 

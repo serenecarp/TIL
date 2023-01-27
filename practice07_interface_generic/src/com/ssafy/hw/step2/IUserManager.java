@@ -1,7 +1,7 @@
 package com.ssafy.hw.step2;
 
 // 인터페이스 정의
-public ________ IUserManager {
+public interface IUserManager {
 	
 	void add(User user);
 	

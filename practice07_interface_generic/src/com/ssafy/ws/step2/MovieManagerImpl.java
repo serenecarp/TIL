@@ -62,19 +62,54 @@ public class MovieManagerImpl implements IMovieManager {
 
 	@Override
 	public Movie[] getMovies() {
-		// TODO Auto-generated method stub
-		return null;
+		int count = 0;
+		for(int i=0; i<size; i++) {
+			if(!(movieList[i] instanceof SeriesMovie)){
+				count++;
+			}
+		}
+		if(count==0) {
+			System.out.println("결과가 없습니다.");
+			return null;
+		}
+		
+		Movie[] mov = new Movie[count];
+		for(int i=0, index=0; i<size; i++) {
+			if(!(movieList[i] instanceof SeriesMovie)) {
+				mov[index++]=movieList[i];
+			}
+		}
+		return mov;
 	}
 
 	@Override
 	public SeriesMovie[] getSeriesMovies() {
-		// TODO Auto-generated method stub
-		return null;
+		int count = 0;
+		for(int i=0; i<size; i++) {
+			if(movieList[i] instanceof SeriesMovie){
+				count++;
+			}
+		}
+		if(count==0) {
+			System.out.println("결과가 없습니다.");
+			return null;
+		}
+		
+		SeriesMovie[] serMov = new SeriesMovie[count];
+		for(int i=0, index=0; i<size; i++) {
+			if(movieList[i] instanceof SeriesMovie) {
+				serMov[index++]=(SeriesMovie)movieList[i];
+			}
+		}
+		return serMov;
 	}
 
 	@Override
 	public double getRunningTimeAvg() {
-		// TODO Auto-generated method stub
-		return 0;
+		int sum=0;
+		for(int i=0; i<size; i++) {
+			sum += movieList[i].getRunningTime();
+		}
+		return sum/size;
 	}
 }

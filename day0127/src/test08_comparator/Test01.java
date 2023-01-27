@@ -1,0 +1,20 @@
+package test08_comparator;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Test01 {
+	public static void main(String[] args) {
+		List<Person> list = new ArrayList<Person>();
+		
+		list.add(new Person("Park", "970516"));
+		list.add(new Person("Lee", "961231"));
+		list.add(new Person("Kim", "950505"));
+		
+		Collections.sort(list, new AgeComparator());
+		System.out.println(list);
+		
+		
+	}
+}

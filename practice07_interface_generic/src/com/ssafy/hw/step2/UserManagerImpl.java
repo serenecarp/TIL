@@ -3,7 +3,7 @@ package com.ssafy.hw.step2;
 import java.util.Arrays;
 
 // IUserManager 의 실제 구현, IUserManager 에 정의된 메소드들을 모두 구현 해야한다.
-public class UserManagerImpl __________ ____________ {
+public class UserManagerImpl implements IUserManager {
 
 	private User[] userList = new User[100];
 
@@ -12,13 +12,13 @@ public class UserManagerImpl __________ ____________ {
 	private int size = 0;
 	
 	// 싱글톤 패턴을 위한 객체 생성, 알맞은 접근 제어자 설정
-	_______ _______ UserManagerImpl um = new UserManagerImpl();
+	private static UserManagerImpl um = new UserManagerImpl();
 	
 	// 싱글톤 패턴의 기본 생성자, 객체 생성을 외부에서 하지 못하게 막음
-	_______ UserManagerImpl() {};
+	private UserManagerImpl() {};
 	
 	// 외부에서 사용할 수 있도록 UserManagerImpl 인스턴스 반환
-	_______ _______ UserManagerImpl getInstance() {
+	public static UserManagerImpl getInstance() {
 		return um;
 	}
 
