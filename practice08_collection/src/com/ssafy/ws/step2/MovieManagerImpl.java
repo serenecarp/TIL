@@ -24,6 +24,7 @@ public class MovieManagerImpl implements IMovieManager {
 	}
 
 	// 영화 추가
+	// 제너릭을 쓰긴 썼는데, 어차피 시리즈영화 그냥영화 add 기능을 압축하지 못한거면 그 둘 메소드를 따로따로 만드는거랑 별 차이가 없는 것 같다.
 	public <T extends Movie> void add(T movie) {
 		
 		
@@ -56,8 +57,8 @@ public class MovieManagerImpl implements IMovieManager {
 			sc.nextLine();
 
 			System.out.println("시리즈영화가 등록되었습니다.");
-			// 시리즈영화일 때 밑에 일반영화도 또 입력하게 되는 점 수정 !!!!!!!!!!!!!!@@
-		} else {
+			
+		} else if (!(movie instanceof SeriesMovie)){
 			// 일반영화 정보 추가
 			movieList.add(movie);
 			System.out.print("영화 id 입력(int): ");
@@ -77,7 +78,10 @@ public class MovieManagerImpl implements IMovieManager {
 			movie.setRunningTime(sc.nextInt());
 			sc.nextLine();
 
-			System.out.println("영화가 등록되었습니다.");
+			System.out.println("일반 영화가 등록되었습니다.");
+			
+		} else {
+			System.out.println("잘못된 입력입니다.");
 		}
 
 	}
@@ -103,6 +107,11 @@ public class MovieManagerImpl implements IMovieManager {
 				normMovList.add(movieList.get(i));
 			}
 		}
+		// 없으면 null 반환
+		if (normMovList.size() == 0) {
+			System.out.println("정보가 없습니다.");
+			return null;
+		}
 		// 반환해야 할 타입인 Movie[]는 배열이므로, normMov를 배열로 바꿔서 return해야 함
 		// 깡통 배열에 그대로 넣어줌
 		Movie[] normMovArr = new Movie[normMovList.size()];
@@ -122,6 +131,11 @@ public class MovieManagerImpl implements IMovieManager {
 				serMovList.add((SeriesMovie) movieList.get(i));
 			}
 		}
+		// 없으면 null 반환
+		if (serMovList.size() == 0) {
+			System.out.println("정보가 없습니다.");
+			return null;
+		}
 		// 반환해야 할 타입인 SeriesMovie[]는 배열이므로, serMov를 배열로 바꿔서 return해야 함
 		// 깡통 배열에 그대로 넣어줌
 		SeriesMovie[] serMovArr = new SeriesMovie[serMovList.size()];
@@ -137,6 +151,11 @@ public class MovieManagerImpl implements IMovieManager {
 			if (movieList.get(i).getTitle().contains(title)) {
 				srchMovList.add(movieList.get(i));
 			}
+		}
+		// 없으면 null 반환
+		if (srchMovList.size() == 0) {
+			System.out.println("정보가 없습니다.");
+			return null;
 		}
 		// Movie[]타입 배열로 return해주기 위해 리스트를 배열에 담음
 		Movie[] srchMovArr = new Movie[srchMovList.size()];
