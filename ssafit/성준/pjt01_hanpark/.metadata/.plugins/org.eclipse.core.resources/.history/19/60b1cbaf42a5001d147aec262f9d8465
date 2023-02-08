@@ -1,0 +1,9 @@
+package ssafit;
+
+import java.util.List;
+
+//박성준
+public interface VideoReviewDao {
+	int insertReview (VideoReview videoReview);
+	List<VideoReview> selectReview (int videoNo);
+}

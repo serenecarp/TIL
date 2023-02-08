@@ -1,0 +1,13 @@
+package ssafit;
+
+import java.io.IOException;
+
+public class Test {
+	public static void main(String[] args) throws IOException{
+		
+		VideoDao list = VideoDaoImpl.getInstance();
+		
+		VideoUi ui = VideoUi.getInstance();
+		ui.service();
+	}
+}

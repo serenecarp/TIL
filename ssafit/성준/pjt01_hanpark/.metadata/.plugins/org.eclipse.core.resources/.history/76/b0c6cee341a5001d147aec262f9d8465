@@ -1,0 +1,10 @@
+package ssafit;
+
+import java.io.IOException;
+
+public class ReviewTest {
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		VideoReviewUi asdf = VideoReviewUi.getInstance(2);
+//		asdf.service();
+	}
+}
