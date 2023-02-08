@@ -1,0 +1,247 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 20px;
+  list-style: none;
+  font-family: 'Gowun Batang', serif;
+}
+
+header {
+  position: sticky;
+  background-color: white;
+  top: 0px;
+  margin-bottom: 25px;
+  box-shadow: 0px 1px 10px;
+  padding: 1px;
+}
+
+
+.page-title > strong {
+  font-size: xx-large;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  margin-left: 80px;
+  margin-right: 80px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav > div > a {
+  margin: 15px;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+}
+
+.top-right {
+  display: flex;
+}
+
+
+main {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+section > div {
+  margin-top: 20px;
+}
+
+
+section ul {
+  display: flex;
+  direction: row;
+}
+
+
+section ul > li img {
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+
+
+section ul > li > a {
+  width: 220px;
+  height: 340px;
+  margin: 20px;
+  padding: 20px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section ul > li > a > span {
+  font-size: medium;
+  
+}
+
+section ul > li > a > .price {
+  margin-bottom: 15px;
+}
+
+
+section > .board {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div > .section-title strong {
+  margin-left: 30px;
+
+}
+
+section > .board > div {
+  margin: 30px;
+  width: 400px;
+}
+
+section > .board > div span {
+  margin: 6px;
+}
+.board-top {
+  display: flex;
+}
+
+.board-content {
+  display: flex;
+}
+
+.board-title {
+  flex-grow: 1;
+}
+
+
+
+
+.board-writer {
+  flex-grow: 0;
+}
+.board-view {
+  flex-grow: 0;
+}
+
+.board .popular > div {
+  display: flex;
+  align-items: center;
+}
+.board .recent > div {
+  display: flex;
+  align-items: center;
+}
+
+
+.board .board-content1 {
+  display: flex;
+  background-color: whitesmoke;
+}
+.board .board-content2 {
+  display: flex;
+
+}
+.board .board-content3 {
+  display: flex;
+  background-color: whitesmoke;
+
+}
+
+
+aside {
+  left: 1px;
+  right: 1px;
+  top: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+aside img {
+  margin: 10px;
+  height: 120px;
+}
+
+.image img {
+  margin-top: 50px;
+}
+
+aside > .stores > div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+
+aside .region ~ span {
+  margin-left: 10px;
+}
+
+.stores > div {
+  width: 200px;
+  
+  background-color: lightgray;
+  border-radius: 10px;
+  font-size: small;
+  padding: 10px 30px;
+  display: flex;
+}
+.stores > .stores-spread {
+  background-color: gray;
+  padding: 10px 30px;
+}
+
+.poll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+  border-radius: 5px;
+  border-color: black;
+  border-width: 1px;
+}
+
+.poll b {
+  font-size: medium;
+}
+
+.poll img {
+  height: 100px;
+}
+
+footer {
+  display: flex;
+}
+
+.poll form {
+  display: flex;
+  flex-direction: column;
+}
+
+footer span {
+  margin: 10px 10px;
+  color: gray;
+}

@@ -1,0 +1,37 @@
+자동차 정보
+
+img : Sonata.jpg
+modelName : 소나타
+VIN : KMHXX00XXXX000000
+color : dark blue
+mileage : 20000
+
+img : K5.jpg
+modelName : K5
+VIN : KNHXX00XXXX000000
+color : dark blue
+mileage : 35000
+
+img : Avante.jpg
+modelName : 아반떼
+VIN : KMHXX00XXXX000001
+color : gray
+mileage : 1000
+
+img : Sorento.jpg
+modelName : 쏘렌토
+VIN : KNHXX00XXXX000001
+color : black
+mileage : 100000
+
+img : Santafe.jpg
+modelName : 산타페
+VIN : KMHXX00XXXX000002
+color : black
+mileage : 150000
+
+img : Ray.jpg
+modelName : 레이
+VIN : KNHXX00XXXX000002
+color : aqua
+mileage : 3000

@@ -1,0 +1,33 @@
+/* 한 줄로 정렬하기 */
+.board_list > div > div {
+  display: inline-block;
+  text-align: center;
+}
+.board_list > div .title {
+  text-align: left;
+}
+/* 이미지랑은 한줄로 안나오네.. */
+#pl > div {
+  display: inline-block;
+}
+#essay > div {
+  display: inline-block;
+}
+
+/* 공간 차지 */
+.board_list .toptitle {
+  width: 30%;
+}
+
+.board_list .title {
+  width: 30%;
+}
+
+.board_list .writer {
+  width: 10%;
+}
+
+.board_list .watched {
+  width: 10%;
+}
+
