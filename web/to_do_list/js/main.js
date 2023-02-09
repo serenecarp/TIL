@@ -1,49 +1,56 @@
 init();
-// 추가버튼 클릭시 행추가 이벤트
+
 function init() {
-    const addBtnList = document.querySelectorAll('button.add');
-    const tableList = document.querySelectorAll('table.table');
-
-    // add 버튼에 tableNo 속성 부여 (어떤 리스트의 add인지 구분)
-    addBtnList.forEach(function (addBtn, index) {
-        addBtn.classList.replace('add', `add${index}`);
+  // 항목 추가 버튼 모으기
+  const addBtnList = document.querySelectorAll('button.add');
+  
+  
+  // 항목 추가 -> addRow
+  addBtnList.forEach(function (addBtn) {
+    let thisTable = addBtn.parentElement.previousElementSibling;
+    addBtn.addEventListener("click", function () {
+      
+      addRow(thisTable);
     });
-    // table 번호맥기기기
-    tableList.forEach(function (table, index) {
-        table.classList.replace('table', `table${index}`);
-    });
-    //
-    console.log(addBtnList);
-    for (let i = 0; i < addBtnList.length; i++) {
-        addBtnList[i].addEventListener("click", function () {
+  });
 
-            addRow(i);
-            
-        });
-    }
+  let saveBtn = document.querySelector('.save-button');
+  saveBtn.addEventListener("click", function(){
+    saveData();
+  });
+
+}
+
+
+
+// 행 추가
+function addRow(table) {
+
+  const newRow = table.insertRow();
+  const newCell1 = newRow.insertCell(0);
+  const newCell2 = newRow.insertCell(1);
+  const newCell3 = newRow.insertCell(2);
+
+
+  const htmlCheck = '<input type="checkbox">';
+  const htmlContent = '<input type="text" class="text" placeholder="     오늘의 할 일을 입력해요." autofocus>';
+  const htmlEdit = `<button class="delete"><img src=" ./img/delete.png" alt="add"></button>`;
+  newCell1.innerHTML = htmlCheck;
+  newCell2.innerHTML = htmlContent;
+  newCell3.innerHTML = htmlEdit;
 }
 
 
 
 
-function addRow(idx) {
 
 
-    const table = document.querySelector(`.table${idx}`);
-    //
+function saveData() {
+  let toDoList = {
 
-    console.log(table);
-    const newRow = table.insertRow();
-    const newCell1 = newRow.insertCell(0);
-    const newCell2 = newRow.insertCell(1);
-    const newCell3 = newRow.insertCell(2);
-
-    
-    const check = '<td><input type="checkbox"></td>';
-    const content = '<td><input type="text" class="text" autofocus></td>';
-    newCell1.innerHTML = check;
-    
-    newCell2.innerHTML = content;
-    newCell3.innerText = 'ㅁㅁ';
+  }
 }
 
+function isChecked() {
+  let checkboxList = document.querySelectorAll('input[type="checkbox"');
+}
