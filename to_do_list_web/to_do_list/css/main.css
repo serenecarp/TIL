@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1em;
+  list-style: none;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 페이지 상단 (제목, 저장버튼) */
+header.top {
+  background-color: #9EA1D4;
+  margin: 1em;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 > strong {
+  font-size: x-large;
+  color: white;
+}
+
+header.top > div {
+  display: flex;
+  justify-content: center;
+}
+
+div.save {
+  position: relative;
+  left: 20em;
+  margin-bottom: 1em;
+}
+
+input.save-button {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 20%;
+  height: 2.4em;
+  width: 2.8em;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: #9EA1D4;
+  color: white;
+
+}
+
+input.save-button:hover {
+  border-radius: 20%;
+  background-color: #A8D1D1;
+  color: white;
+  height: 2.4em;
+  width: 2.8em;
+}
+
+/* main (투두리스트) */
+main {
+  margin: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > section {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.todo-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#important span > strong {
+  color: #FD8A8A;
+
+}
+
+.todo-title {
+  position: relative;
+  left: 1.86em;
+}
+
+table {
+  border: 1px solid;
+  border-color: lightgray;
+  border-collapse: collapse;
+
+  margin: 1em;
+}
+
+
+td {
+  width: 2em;
+  border: 1px solid;
+  border-color: lightgray;
+}
+
+tr > td:nth-child(3) {
+  border-color: white;
+}
+
+
+
+input[type="checkbox"] {
+  margin: 1em;
+  width: 1.5em;
+  height: 1.5em;
+  border: none;
+}
+
+input[type="checkbox"]:checked {
+  accent-color:black;
+}
+
+input[type="checkbox"]:hover {
+  accent-color: #A8D1D1;
+}
+
+input[type="text"] {
+  border: none;
+  border-radius: 3em;
+  outline: none;  
+  width: 25em;
+}
+
+div.edit {
+  width: 3em;
+}
+
+button {
+  background-color: transparent;
+  height: 2.2em;
+  border: none;
+  position: relative;
+  left: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  border-radius: 50%;
+  background-color: #A8D1D1;
+  height: 2.5em;
+  width: 2.5em;
+}
+
+div.add-row {
+  height: 2em;
+}
+
+button > img {
+  height: 2em;
+
+}
+
+button.delete > img {
+  height: 1.8em;
+}
+button.delete:hover {
+  border-radius: 50%;
+  background-color: #A8D1D1;
+  height: 2em;
+  width: 2em;
+}

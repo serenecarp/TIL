@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TO-DO-LIST</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- 화면 상단부 /start -->
+  <header class="top">
+    <div id="page-title">
+      <h1><strong>To-Do-List</strong></h1>
+    </div>
+    
+  </header>
+  <!-- 화면 상단부 /end -->
+
+
+  <!-- 주요 내용(toDoList) /start -->
+  <main id="todo-list">
+    <!-- 저장버튼 -->
+    <div class="save">
+      <form action="">
+        <input type="button" class="save-button" value="저장">
+      </form>
+    </div>
+
+    <!-- toDoList: "중요" -->
+    <section id="important">
+      <div class="todo-title">
+        <span><strong>중요</strong></span>
+      </div>
+      <div class="todo-main">
+        <table class="table">
+          <tbody>
+            <tr class="content">
+              <td class="checkbox">
+                <input type="checkbox">
+              </td>
+              <td class="text">
+                <input type="text" class="text" placeholder="     오늘의 할 일을 입력해요." autofocus>
+              </td>
+              <td class="edit">
+                <div class="edit">
+                  <button class="delete"><img src=" ./img/delete.png" alt="add"></button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="add-row">
+          <button class="add"><img src="./img/add.png" alt="add"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- toDoList: "일반" -->
+    <section id="common">
+      <div class="todo-title">
+        <span><strong>일반</strong></span>
+      </div>
+      <div class="todo-main">
+        <table class="table">
+          <tbody>
+            <tr class="content">
+              <td class="checkbox">
+                <input type="checkbox">
+              </td>
+              <td class="text">
+                <input type="text" class="text" placeholder="     오늘의 할 일을 입력해요." autofocus>
+              </td>
+              <td class="edit">
+                <div class="edit">
+                  <button class="delete"><img src=" ./img/delete.png" alt="add"></button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="add-row">
+          <button class="add"><img src="./img/add.png" alt="add"></button>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <!-- 주요 내용(toDoList) /start -->
+
+
+
+
+
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>

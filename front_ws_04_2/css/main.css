@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.03em;
+  list-style: none;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #E9E8E8;
+}
+
+html {
+  height: 1px;
+}
+
+/* 화면 상단부 */
+header {
+  margin-bottom: 1em;
+  position: sticky;
+  height: 100%;
+  padding-top: 50px;
+  top: -50px;
+  background-color: #20262E;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > .tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav > .tabs > a {
+  margin-right: 2em;
+}
+
+nav > div {
+  margin: 1em;
+  padding: 1em;
+}
+
+main {
+  margin-top: 30px;
+  margin-left: 30px;
+  display: flex;
+}
+
+main .title {
+  font-size: x-large;
+}
+
+section > ul.movies {
+  display: flex;
+  flex-flow: row wrap;
+}
+section > ul.movies > li {
+  margin: 0.5em;
+  width: 16em;
+  height: 25em;
+}
+
+.movie-part {
+  margin: 0.5em;
+  flex-flow: column wrap;
+  display: flex;
+  align-items: center;
+}
+.movie-part-top > .poster > img {
+  height: 15em;
+}
+
+.movie-part-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1em;
+}
+
+
+.movie-title {
+  align-self: center;
+}
+
+.movie-title > hr {
+  width: 100%;
+  border-top: 1px dashed #20262E
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.info > span {
+  font-size: large;
+}
+
+
+
+.like input {
+  
+  font-size: medium;
+}
+
+.like input:hover {
+  color: darkgray;
+  
+}
+
+
+aside {
+  position: sticky;
+  
+  top: 6em;
+  right: 3em;
+}
+
+aside > h3 {
+  margin: 1em;
+}
+
+aside.like-list > div.like_comment {
+  display: flex;
+  flex-flow: column;
+}
+
+
+footer {
+  background-color: #20262E;
+}
+
+footer .bottom {
+  display: flex;
+  justify-content: center;
+
+}
+
+footer .bottom > li {
+  margin: 20px;
+}
+
+.copyright {
+  color: #E9E8E8;
+
+}
