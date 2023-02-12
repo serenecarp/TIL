@@ -55,7 +55,8 @@ function addRow(table) {
   newCell2.innerHTML = htmlContent;
   newCell3.innerHTML = htmlEdit;
 
-  const newDelBtn = table.querySelector('button.delete');
+  console.log(table.childNodes[1].lastChild.lastChild);
+  const newDelBtn = table.childNodes[1].lastChild.lastChild;
   newDelBtn.addEventListener("click", function () {
     console.log(newDelBtn);
     console.log(newDelBtn.parentElement.parentElement);
