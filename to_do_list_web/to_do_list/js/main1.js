@@ -22,15 +22,13 @@ function init() {
   // 항목 삭제 -> delRow
   delBtnList.forEach(function (delBtn) {
     let thisTable = delBtn.closest('table');
-    delBtn.addEventListener("click", function () {
-      delRow(thisTable.childNodes[1].childNodes[1]);
-    });
+    delBtn.addEventListener("click", onClickDelete(thisTable));
   });
 
 }
 
 function onClickDelete(table) {
-
+  delRow(table.childNodes[1].childNodes[1]);
 }
 
 
@@ -50,9 +48,8 @@ function addRow(table) {
   newCell2.innerHTML = htmlContent;
   newCell3.innerHTML = htmlEdit;
   const newDelBtn = table.childNodes[1].childNodes[1].childNodes[5].childNodes[1].childNodes[1];
-  
   newDelBtn.addEventListener("click", function () {
-    
+    console.log(newDelBtn);
     delRow(newDelBtn.parentElement.parentElement.parentElement);
   });
   // const newDelBtn = table.childNodes[1].childNodes[1].childNodes

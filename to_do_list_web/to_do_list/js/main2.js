@@ -1,4 +1,5 @@
-
+let impToDoLists = [];
+let comToDoLists = [];
 
 function init() {
   // 항목 추가 버튼 모으기
@@ -27,10 +28,14 @@ function init() {
     });
   });
 
+  saveBtn.addEventListener("click", function() {
+    saveData();
+  });
+
 }
 
 function onClickDelete(table) {
-
+  
 }
 
 
@@ -44,18 +49,18 @@ function addRow(table) {
 
 
   const htmlCheck = '<input type="checkbox">';
-  const htmlContent = '<input type="text" class="text" placeholder="     휴지통 눌러도 삭제가 안돼요.." autofocus>';
+  const htmlContent = '<input type="text" class="text" placeholder="휴지통 눌러도 삭제가 안돼요.." autofocus>';
   const htmlEdit = `<button class="delete"><img src=" ./img/delete.png" alt="add"></button>`;
   newCell1.innerHTML = htmlCheck;
   newCell2.innerHTML = htmlContent;
   newCell3.innerHTML = htmlEdit;
-  const newDelBtn = table.childNodes[1].childNodes[1].childNodes[5].childNodes[1].childNodes[1];
-  
+
+  const newDelBtn = table.querySelector('button.delete');
   newDelBtn.addEventListener("click", function () {
-    
-    delRow(newDelBtn.parentElement.parentElement.parentElement);
+    console.log(newDelBtn);
+    console.log(newDelBtn.parentElement.parentElement);
+    delRow(newDelBtn.parentElement.parentElement);
   });
-  // const newDelBtn = table.childNodes[1].childNodes[1].childNodes
 }
 
 
@@ -66,14 +71,26 @@ function delRow(tr) {
 
 
 function saveData() {
-  let toDoList = {
-
-  }
+  localStorage.setItem(imp, JSON.stringify(impToDoLists));
+  localStorage.setItem(com, JSON.stringify(comToDoLists));
 }
 
 function isChecked() {
-  let checkboxList = document.querySelectorAll('input[type="checkbox"');
+  let impCheckbox = document.querySelectorAll('#important input[type="checkbox"');
+  let comCheckbox = document.querySelectorAll('#common input[type="checkbox"');
 }
 
+// function setToDoVal() {
+
+//   let impToDoval = document.querySelectorAll('#important input[type="text"]');
+//   impToDoval.forEach(function(toDoVal){
+//     toDoVal.setAttribute('value');
+//   });
+//   let comToDoval = document.querySelectorAll('#common input[type="text"]');
+//   console.log(impToDoval);
+//   console.log(comToDoval);
+// }
 
 init();
+
+// setToDoVal();

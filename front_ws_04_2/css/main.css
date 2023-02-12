@@ -46,6 +46,8 @@ nav > div {
   padding: 1em;
 }
 
+
+/* 중심 내용 (영화 목록) */
 main {
   margin-top: 30px;
   margin-left: 30px;
@@ -104,7 +106,7 @@ section > ul.movies > li {
   font-size: large;
 }
 
-
+/* 찜 */
 
 .like input {
   
@@ -116,6 +118,7 @@ section > ul.movies > li {
   
 }
 
+/* 찜목록 */
 
 aside {
   position: sticky;
@@ -133,7 +136,7 @@ aside.like-list > div.like_comment {
   flex-flow: column;
 }
 
-
+/* 페이지 아래 */
 footer {
   background-color: #20262E;
 }

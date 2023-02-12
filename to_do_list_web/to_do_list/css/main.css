@@ -128,8 +128,9 @@ input[type="checkbox"]:hover {
 }
 
 input[type="text"] {
+  margin-left: 1em;
   border: none;
-  border-radius: 3em;
+  border-radius: 0em;
   outline: none;  
   width: 25em;
 }
