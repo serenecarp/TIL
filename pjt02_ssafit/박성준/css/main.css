@@ -1,0 +1,58 @@
+/* 전체 초기화 */
+* {
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1em;
+  list-style: none;
+}
+
+/* a태그 초기화 */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 상단 nav바 */
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* 전체 썸네일 크기 조정 */
+img {
+  width: 30em;
+  margin: 0px 13px 0px;
+}
+
+/* 버튼류 조정 */
+button {
+  background-color: black;
+  color: black;
+}
+
+/* 페이지 상단 부분 정렬 */
+.header-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* 섹션 제목 */
+.board-title {
+  margin: 20px 0 0 0;
+}
+
+/* 영상 정렬 */
+.recent-video {
+  margin: 60px 0 0 0;
+  text-align: center;
+}
