@@ -1,0 +1,62 @@
+[
+	{
+		"pCode": "R00001",
+		"pName": "S냉장고",
+		"price": 1000000,
+		"quantity": 20,
+		"brand": "삼성",
+		"desc": "삼성에서 출시한 스마트 냉장고입니다.",
+		"category": "냉장고",
+		"liter": 1000,
+		"freezer": true,
+		"year": 2021
+	},
+	{
+		"pCode": "R00002",
+		"pName": "L냉장고",
+		"price": 100000,
+		"quantity": 10,
+		"brand": "엘리스",
+		"desc": "엘리스 저가형 냉장고.",
+		"category": "냉장고",
+		"liter": 300,
+		"freezer": false,
+		"year": 2022
+	},
+	{
+		"pCode": "R00003",
+		"pName": "T냉장고",
+		"price": 3000000,
+		"quantity": 200,
+		"brand": "로보",
+		"desc": "로보에서 출시한 AI냉장고입니다.",
+		"category": "냉장고",
+		"liter": 1200,
+		"freezer": true,
+		"year": 2022
+	},
+	{
+		"pCode": "R00004",
+		"pName": "K냉장고",
+		"price": 500000,
+		"quantity": 50,
+		"brand": "코라",
+		"desc": "코라에서 출시한 보급형냉장고입니다.",
+		"category": "냉장고",
+		"liter": 700,
+		"freezer": false,
+		"year": 2021
+	},
+	{
+		"pCode": "R00005",
+		"pName": "A냉장고",
+		"price": 1000000,
+		"quantity": 10,
+		"brand": "에이스",
+		"desc": "에이스에서 출시한 스마트 냉장고입니다.",
+		"category": "냉장고",
+		"liter": 800,
+		"freezer": true,
+		"year": 2022
+	}
+]
