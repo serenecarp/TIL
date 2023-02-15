@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>movies ws2-2</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <!-- 페이지 상단부 start-->
+  <header class="position:sticky;">
+    <nav>
+      <!-- class를 주거나 주석  -->
+      <!-- <style>
+        div.title>a>strong{
+
+        }strong ;
+      </style> -->
+      <!-- id :반복되지 않는다. class: 반복가능하다 -->
+      <div>
+        <a href="#"><strong>영화관리</strong></a>
+      </div>
+      <div class="search">
+        <form action="">
+          <input type="text" placeholder="" value="베놈" size="40">
+          <input type="submit" value="검색">
+        </form>
+      </div>
+      <div class="tabs">
+        <a href="#">로그인</a> &nbsp;&nbsp;
+        <a href="#">로그아웃</a> &nbsp;&nbsp;
+        <a href="#">회원가입</a> &nbsp;&nbsp;
+        <a href="#">게시판</a> &nbsp;&nbsp;
+        <a href="#">마이페이지</a>
+      </div>
+    </nav>
+  </header>
+  <!-- 페이지 상단부 end-->
+
+  <main>
+    <!-- section: 영화 목록 -->
+    <section>
+      <h2 class="title">&lt; 영화 목록 &gt;</h2>
+      <br>
+      <ul class="movies">
+        <li>
+          <div class="moviepart">
+            <!-- 주석 -->
+            <div>
+              <div class="poster">
+                <img src="./img/eternals.jpg" alt="이터널스">
+              </div>
+              <div class="info">
+                <h2 class="movietitle">이터널스</h2>
+                <hr class="movietitle">
+                <div>액션</div>
+                <div>클로이 자오</div>
+                <div>155분</div>
+              </div>
+            </div>
+            <!-- 찜하기 -->
+            <div class="like">
+              <form action="">
+                <input type="submit" value="   찜   ">
+              </form>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="moviepart">
+            <div>
+              <div class="poster">
+                <img src="./img/venom.jpg" alt="베놈 2: 렛 데어 비 카니지">
+              </div>
+              <div class="info">
+                <div class="movietitle">베놈 2: 렛 데어 비 카니지</div>
+                <hr class="movietitle">
+                <div>액션</div>
+                <div>앤디 서키스</div>
+                <div>97분</div>
+              </div>
+            </div>
+            <!-- 찜하기 -->
+            <div class="like">
+              <form action="">
+                <input type="submit" value="   찜   ">
+              </form>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="moviepart">
+            <div>
+              <div class="poster">
+                <img src="./img/parasite.jpg" alt="기생충">
+              </div>
+              <div class="info">
+                <div class="movietitle">기생충</div>
+                <hr class="movietitle">
+                <div>드라마</div>
+                <div>봉준호</div>
+                <div>131분</div>
+              </div>
+            </div>
+            <!-- 찜하기 -->
+            <div class="like">
+              <form action="">
+                <input type="submit" value="   찜   ">
+              </form>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="moviepart">
+            <div>
+              <div class="poster">
+                <img src="./img/harrypoter_stone.jpg" alt="해리포터와 마법사의 돌">
+              </div>
+              <div class="info">
+                <div class="movietitle">해리포터와 마법사의 돌</div>
+                <hr class="movietitle">
+                <div>판타지</div>
+                <div>크리스 콜럼버스</div>
+                <div>152분</div>
+              </div>
+            </div>
+            <!-- 찜하기 -->
+            <div class="like">
+              <form action="">
+                <input type="submit" value="   찜   ">
+              </form>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="moviepart">
+            <div>
+              <div class="poster">
+                <img src="./img/harrypoter_room.jpg" alt="해리포터와 비밀의 방">
+              </div>
+              <div class="info">
+                <div class="movietitle">해리포터와 비밀의 방</div>
+                <hr class="movietitle">
+                <div>판타지</div>
+                <div>피터 잭슨</div>
+                <div>263분</div>
+              </div>
+            </div>
+            <!-- 찜하기 -->
+            <div class="like">
+              <form action="">
+                <input type="submit" value="   찜   ">
+              </form>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="moviepart">
+            <div>
+              <div class="poster">
+                <img src="./img/load_of_ring.jpg" alt="반지의 제왕: 왕의 귀환">
+              </div>
+              <div class="info">
+                <div class="movietitle">반지의 제왕: 왕의 귀환</div>
+                <hr class="movietitle">
+                <div>판타지</div>
+                <div>피터 잭슨</div>
+                <div>263분</div>
+              </div>
+            </div>
+            <!-- 찜하기 -->
+            <div class="like">
+              <form action="">
+                <input type="submit" value="   찜   ">
+              </form>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="moviepart">
+            <div>
+              <div class="poster">
+                <img src="./img/dune.jpg" alt="듄">
+              </div>
+              <div class="info">
+                <div class="movietitle">듄</div>
+                <hr class="movietitle">
+                <div>모험</div>
+                <div>드니 뷜뇌브</div>
+                <div>155분</div>
+              </div>
+            </div>
+            <!-- 찜하기 -->
+            <div class="like">
+              <form action="">
+                <input type="submit" value="   찜   ">
+              </form>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="moviepart">
+            <!-- 엄마 -->
+            <div class="mother">
+              <!-- 1 -->
+              <div class="poster">
+                <img src="./img/tomb_of_the_river.jpg" alt="강릉">
+              </div>
+              <!-- 2 -->
+              <div class="info">
+                <h2 class="movietitle">강릉</h2>
+                <hr class="movietitle">
+                <!-- 텍스트는.. heading, 
+                  block p
+                  inline span
+                -->
+                <span>범죄</span>
+                <span>윤영빈</span>
+                <span>119분</span>
+              </div>
+              <!-- 찜하기 -->
+              <div class="like">
+                <!-- 찜하기는 어떤 가능? 내가 원하는 영화를 나의 목록 -->
+                <form action="">
+                  <input type="submit" value="   찜   ">
+                </form>
+              </div>
+            </div>
+            
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <aside>
+      <h3>찜 리스트</h3>
+      <div>인생 영화를 찜해주세요!</div>
+    </aside>
+  </main>
+  <footer>
+    <ul>
+      <div class="bottom">
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">오시는 길</a></li>
+        <li>
+          <div class="copyright">&copy; SSAFY 서울_8반_박성준
+        </li>
+      </div>
+    </ul>
+  </footer>
+</body>
+
+</html>

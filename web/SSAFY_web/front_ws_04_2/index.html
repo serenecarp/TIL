@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>movies ws2-2</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <!-- 페이지 상단부 /start-->
+  <header>
+    <nav>
+      <div class="top-left">
+        <a href="#"><strong class="page-title">영화관리</strong></a>
+      </div>
+      <div class="search">
+        <form action="">
+          <input type="text" placeholder="  영화 제목을 입력하세요." size="40">
+          <input type="submit" value="검색">
+        </form>
+      </div>
+      <div class="tabs">
+        <a href="#">로그인</a>
+        <a href="#">로그아웃</a>
+        <a href="#">회원가입</a>
+        <a href="#">게시판</a>
+        <a href="#">마이페이지</a>
+      </div>
+    </nav>
+
+  </header>
+  <!-- 페이지 상단부 /end -->
+
+  <main>
+    <!-- section: 영화 목록 /start-->
+    <section>
+      <h2 class="title">&lt; 영화 목록 &gt;</h2>
+      <br>
+      <ul class="movies">
+        <li class="movie">
+          <!-- 영화정보 -->
+          <div class="movie-part">
+            <!-- 1. 정보 상단(포스터) -->
+            <div class="movie-part-top">
+              <!-- 영화 포스터 -->
+              <div class="poster">
+                <img src="./img/eternals.jpg" alt="이터널스">
+              </div>
+            </div>
+            <!-- 2. 정보 하단(상세정보, 찜) -->
+            <div class="movie-part-bottom">
+              <!-- 영화 상세정보 -->
+              <div class="info">
+                <span class="movie-title">이터널스
+                  <hr>
+                </span>
+                <span class="genre">액션</span>
+                <span class="director">클로이 자오</span>
+                <span class="running-time">155분</span>
+              </div>
+              <!-- 찜하기 -->
+              <div class="like">
+                <form action="">
+                  <input type="button" value="  찜  ">
+                </form>
+              </div>
+            </div>
+        </li>
+        <li class="movie">
+          <!-- 영화정보 -->
+          <div class="movie-part">
+            <!-- 1. 정보 상단(포스터) -->
+            <div class="movie-part-top">
+              <!-- 영화 포스터 -->
+              <div class="poster">
+                <img src="./img/venom.jpg" alt="베놈 2: 렛 데어 비 카니지">
+              </div>
+            </div>
+            <!-- 2. 정보 하단(상세정보, 찜) -->
+            <div class="movie-part-bottom">
+              <!-- 영화 상세정보 -->
+              <div class="info">
+                <span class="movie-title">베놈 2: 렛 데어 비 카니지
+                  <hr>
+                </span>
+                <span class="genre">액션</span>
+                <span class="director">앤디 서커스</span>
+                <span class="running-time">97분</span>
+              </div>
+              <!-- 찜하기 -->
+              <div class="like">
+                <form action="">
+                  <input type="button" value="  찜  ">
+                </form>
+              </div>
+            </div>
+        </li>
+        <li class="movie">
+          <!-- 영화정보 -->
+          <div class="movie-part">
+            <!-- 1. 정보 상단(포스터) -->
+            <div class="movie-part-top">
+              <!-- 영화 포스터 -->
+              <div class="poster">
+                <img src="./img/parasite.jpg" alt="기생충">
+              </div>
+            </div>
+            <!-- 2. 정보 하단(상세정보, 찜) -->
+            <div class="movie-part-bottom">
+              <!-- 영화 상세정보 -->
+              <div class="info">
+                <span class="movie-title">기생충
+                  <hr>
+                </span>
+                <span class="genre">드라마</span>
+                <span class="director">봉준호</span>
+                <span class="running-time">131분</span>
+              </div>
+              <!-- 찜하기 -->
+              <div class="like">
+                <form action="">
+                  <input type="button" value="  찜  ">
+                </form>
+              </div>
+            </div>
+        </li>
+        <li class="movie">
+          <!-- 영화정보 -->
+          <div class="movie-part">
+            <!-- 1. 정보 상단(포스터) -->
+            <div class="movie-part-top">
+              <!-- 영화 포스터 -->
+              <div class="poster">
+                <img src="./img/harrypoter_stone.jpg" alt="해리포터와 마법사의 돌">
+              </div>
+            </div>
+            <!-- 2. 정보 하단(상세정보, 찜) -->
+            <div class="movie-part-bottom">
+              <!-- 영화 상세정보 -->
+              <div class="info">
+                <span class="movie-title">해리포터와 마법사의 돌
+                  <hr>
+                </span>
+                <span class="genre">판타지</span>
+                <span class="director">크리스 콜럼버스</span>
+                <span class="running-time">152분</span>
+              </div>
+              <!-- 찜하기 -->
+              <div class="like">
+                <form action="">
+                  <input type="button" value="  찜  ">
+                </form>
+              </div>
+            </div>
+        </li>
+        <li class="movie">
+          <!-- 영화정보 -->
+          <div class="movie-part">
+            <!-- 1. 정보 상단(포스터) -->
+            <div class="movie-part-top">
+              <!-- 영화 포스터 -->
+              <div class="poster">
+                <img src="./img/harrypoter_room.jpg" alt="해리포터와 비밀의 방">
+              </div>
+            </div>
+            <!-- 2. 정보 하단(상세정보, 찜) -->
+            <div class="movie-part-bottom">
+              <!-- 영화 상세정보 -->
+              <div class="info">
+                <span class="movie-title">해리포터와 비밀의 방
+                  <hr>
+                </span>
+                <span class="genre">판타지</span>
+                <span class="director">크리스 콜롬버스</span>
+                <span class="running-time">162분</span>
+              </div>
+              <!-- 찜하기 -->
+              <div class="like">
+                <form action="">
+                  <input type="button" value="  찜  ">
+                </form>
+              </div>
+            </div>
+        </li>
+        <li class="movie">
+          <!-- 영화정보 -->
+          <div class="movie-part">
+            <!-- 1. 정보 상단(포스터) -->
+            <div class="movie-part-top">
+              <!-- 영화 포스터 -->
+              <div class="poster">
+                <img src="./img/load_of_ring.jpg" alt="반지의 제왕: 왕의 귀환">
+              </div>
+            </div>
+            <!-- 2. 정보 하단(상세정보, 찜) -->
+            <div class="movie-part-bottom">
+              <!-- 영화 상세정보 -->
+              <div class="info">
+                <span class="movie-title">반지의 제왕: 왕의 귀환
+                  <hr>
+                </span>
+                <span class="genre">판타지</span>
+                <span class="director">피터 잭슨</span>
+                <span class="running-time">263분</span>
+              </div>
+              <!-- 찜하기 -->
+              <div class="like">
+                <form action="">
+                  <input type="button" value="  찜  ">
+                </form>
+              </div>
+            </div>
+        </li>
+        <li class="movie">
+          <!-- 영화정보 -->
+          <div class="movie-part">
+            <!-- 1. 정보 상단(포스터) -->
+            <div class="movie-part-top">
+              <!-- 영화 포스터 -->
+              <div class="poster">
+                <img src="./img/dune.jpg" alt="듄">
+              </div>
+            </div>
+            <!-- 2. 정보 하단(상세정보, 찜) -->
+            <div class="movie-part-bottom">
+              <!-- 영화 상세정보 -->
+              <div class="info">
+                <span class="movie-title">듄
+                  <hr>
+                </span>
+                <span class="genre">모험</span>
+                <span class="director">드니 뷜뇌브</span>
+                <span class="running-time">155분</span>
+              </div>
+              <!-- 찜하기 -->
+              <div class="like">
+                <form action="">
+                  <input type="button" value="  찜  ">
+                </form>
+              </div>
+            </div>
+        </li>
+        <li class="movie">
+          <!-- 영화정보 -->
+          <div class="movie-part">
+            <!-- 1. 정보 상단(포스터) -->
+            <div class="movie-part-top">
+              <!-- 영화 포스터 -->
+              <div class="poster">
+                <img src="./img/tomb_of_the_river.jpg" alt="강릉">
+              </div>
+            </div>
+            <!-- 2. 정보 하단(상세정보, 찜) -->
+            <div class="movie-part-bottom">
+              <!-- 영화 상세정보 -->
+              <div class="info">
+                <span class="movie-title">강릉
+                  <hr>
+                </span>
+                <span class="genre">범죄</span>
+                <span class="director">윤영빈</span>
+                <span class="running-time">119분</span>
+              </div>
+              <!-- 찜하기 -->
+              <div class="like">
+                <form action="">
+                  <input type="button" value="  찜  ">
+                </form>
+              </div>
+            </div>
+        </li>
+
+      </ul>
+    </section>
+    <!-- section: 영화 목록 /end-->
+
+    <!-- 찜목록 -->
+    <aside class="like-list">
+      <h3 class="like-list-title">찜 리스트</h3>
+      <ul class="like-comment"></ul>
+    </aside>
+  </main>
+
+  <!-- footer: 페이지 하단 -->
+  <footer>
+    <ul>
+      <div class="bottom">
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">오시는 길</a></li>
+        <li>
+          <div class="copyright">&copy; SSAFY 서울_8반_박성준
+        </li>
+      </div>
+    </ul>
+  </footer>
+  <script type="text/javascript" src="./js/main.js"></script>
+
+</body>
+
+</html>

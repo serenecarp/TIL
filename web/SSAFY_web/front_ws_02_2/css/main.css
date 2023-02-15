@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  list-style: none;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+html {
+  height: 1px;
+}
+
+/* 화면 상단부 */
+header {
+  margin-bottom: 20px;
+  position: sticky;
+  height: 100%;
+  padding-top: 50px;
+  top: -50px;
+  background-color: #20262E;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+a {
+  text-decoration: none;
+  color: #E9E8E8;
+}
+
+
+
+nav>div {
+  margin: 20px;
+  padding: 10px;
+}
+
+main {
+  margin-top: 30px;
+  margin-left: 30px;
+  display: flex;
+}
+
+
+
+.moviepart {
+  margin: 30px;
+  flex-flow: column wrap;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: x-large;
+}
+
+.movies {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.movietitle~hr {
+  width: 100%;
+  border-top: 1px dashed #20262E
+}
+
+.movietitle {
+  align-self: center;
+}
+
+.poster {
+
+  margin: 10px;
+
+}
+
+
+
+.like {
+  margin-bottom: 20px;
+  display: inline;
+  align-self: center;
+}
+
+aside {
+  position: sticky;
+  width: 30%;
+  height: 20%;
+  top: 100px;
+
+}
+
+
+
+footer {
+  background-color: #20262E;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+
+}
+
+.bottom>li {
+  margin: 20px;
+}
+
+.copyright {
+  color: #E9E8E8;
+
+}
+
+.mother{
+  display:flex;
+  flex-direction: column;
+}
