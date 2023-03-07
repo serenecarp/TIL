@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>영화정보사이트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700;900&display=swap"
+	rel="stylesheet">
+
+<!-- CSS -->
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 1em;
+	list-style: none;
+	font-family: 'Gothic A1', sans-serif;
+	font-weight: 400;
+}
+
+body {
+	background-color: #0c0b00;
+	color: #fcf7f7;
+}
+
+nav {
+	background-color: #121212;
+	margin-top: 2em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.superbold {
+	font-weight: 900;
+}
+
+.logo {
+	display: flex;
+	background-color: #deb522;
+	width: 4em;
+	height: 1.8em;
+	border-radius: 0.3em;
+	justify-content: center;
+	align-items: center;
+	margin: 0.2em;
+	margin-left: 1em;
+}
+
+.logo>h1 {
+	margin: 1em;
+	color: #0c0b00;
+}
+
+form {
+	width: 40em;
+}
+
+fieldset {
+	margin: 2em;
+	width: 15em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+fieldset>legend {
+	margin-left: 20%;
+}
+
+legend>strong {
+	margin: 1em;
+}
+
+.go-regist {
+	margin: 1em;
+}
+
+.regist>input {
+	border: 1px solid #fcf7f7;
+	background-color: #0c0b00;
+	color: #fcf7f7;
+	padding: 0.3em;
+	margin: 0.15em;
+}
+
+.regist>input:hover {
+	border: 1px solid #deb522;
+	background-color: #0c0b00;
+	color: #deb522;
+	padding: 0.3em;
+	cursor: pointer;
+	margin: 0.15em;
+}
+
+form {
+	width: 40em;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 15em;
+}
+
+fieldset>div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0.2em;
+}
+
+.text {
+	align-self: flex-start;
+}
+
+div.regist {
+	display: flex;
+	flex-direction: row;
+}
+</style>
+
+<!-- /CSS -->
+
+
+
+</head>
+
+<body>
+	<!-- 화면 상단 nav바 -->
+	<nav>
+		<div class="logo">
+			<h1 class="superbold">MOFFY</h1>
+		</div>
+	</nav>
+
+	<!-- 영화 정보를 입력하고 등록 -->
+	<form action="main" method="POST">
+		<input type="hidden" name="action" value="regist">
+		<fieldset>
+			<legend>
+				<strong class="bold">영화 정보 입력</strong>
+			</legend>
+			<div class="title">
+				<label class="text">제목</label> <input type="text" name="title"
+					class="input">
+			</div>
+
+			<div class="director">
+				<label class="text">감독</label> <input type="text" name="director"
+					class="input">
+			</div>
+
+			<div class="genre">
+				<label class="text">장르</label> <input type="text" name="genre"
+					class="input">
+			</div>
+
+			<div class="runnint-time">
+				<label class="text">상영 시간</label> <input type="text"
+					name="runningTime" class="input">
+			</div>
+
+			<!-- 등록, 초기화 버튼 -->
+			<div class="regist">
+				<input type="submit" value="등록"> <input type="reset"
+					value="초기화">
+			</div>
+
+		</fieldset>
+
+	</form>
+</body>
+
+</html>
